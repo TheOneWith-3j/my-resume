@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+/* styles.css or your Tailwind CSS file */
+
+/* Hide the before element for TimelineItem with missingOppositeContent class */
+.MuiTimelineItem-missingOppositeContent:before {
+  display: none;
+}
+
+/* Additional styles as needed */
+  
