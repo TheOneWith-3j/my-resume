@@ -113,36 +113,30 @@ import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 
 const CustomTimeline = ({ title, children, icon }) => {
   return (
-    <div>
+    <div className="">
       <Timeline className="">
         {/* Timeline Header */}
         <TimelineItem className="">
           <TimelineSeparator>
-            <TimelineDot variant="outlined" className="bg-yellow-200"><SchoolRoundedIcon/>{icon}</TimelineDot>
+            <TimelineDot variant className="bg-yellow-800 scale-150">{icon}</TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent >
-            <p className="text-lg p-2">aksjnckjncadk{title}</p>
+            <p className="my-3">wjflfwlkrm{title}</p>
           </TimelineContent>
         </TimelineItem>
-        <TimelineConnector />
 
 
         {children}
         {/* Remaining Items */}
-        <TimelineConnector />
-        <TimelineItem>
-          <CustomTimelineSeparator/>
-          <TimelineContent className="p-2 mx-2">Code</TimelineContent>
-        </TimelineItem>
       </Timeline>
     </div>
   );
 };
 
 export const CustomTimelineSeparator = () => (
-  <TimelineSeparator className="">
-    <TimelineDot variant="outlined" />
+  <TimelineSeparator className="mx-3 ">
+    <TimelineDot variant="outlined" className="border-yellow-300"/>
     <TimelineConnector />
   </TimelineSeparator>
 );

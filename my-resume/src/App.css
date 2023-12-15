@@ -45,4 +45,6 @@
 }
 
 /* Additional styles as needed */
-  
+.MuiTimelineConnector-root{
+  color: yellow;
+}

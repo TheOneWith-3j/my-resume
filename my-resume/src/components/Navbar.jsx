@@ -5,19 +5,12 @@ const Navbar = () => {
 
 
     return (
-        <nav className='w-full'>
+        <nav className='w-full flex backdrop-blur-3xl top-0 start-0 border-b-4 border-gray-200 dark:border-yellow-200 overflow-y-hidden'>
             
-            <div className='flex font-Poppins backdrop-blur-3xl'>
-
-                {/* Image  */}
-                <Link to='/'>
-                    <div className='m-5'>
-                        <img src="https://www.somaiya.edu.in/assets/default_asset/img/somiaya-vidyavihar-logo.svg"  alt='kjsit-logo' className='scale-125'  />
-                    </div>
-                </Link>
+            <div className='flex font-Poppins'>
 
                 {/* Links */}
-                <div className='flex items-center' >
+                <div className='flex items-center text-white' >
                      <Link to={'/'}>
                         <div className=' cursor-pointer p-2 mx-4 hover:scale-105 transition-all duration-300'>
                             <p>
@@ -60,18 +53,11 @@ const Navbar = () => {
                 </div>
 
                
-                {/*Trust*/}
-                            
-                <div className='flex items-center w-full justify-end'>
-                    <a href='https://www.somaiya.com/'>
-                        <img src="https://www.somaiya.edu.in//assets/arigel_general/img/homepage/Trust.svg" width="75" height="54.79"  alt='trust-logo' className='scale-100'/>
-                    </a>
-                </div>
+                
                 
             </div>
            
-            </nav>
-        // </nav>
+        </nav>
     )
 }
 

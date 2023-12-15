@@ -7,13 +7,12 @@ import Timeline from './components/Timeline';
 
 function App() {
   return (
+    
     <BrowserRouter>
-      <Navbar/>
       <Routes>
         <Route index element={<BasicInfo/>}/>
         <Route path='/Timeline' element={<Timeline/>}/>
       </Routes>
-      <Footer/>
     </BrowserRouter>
   );
 }
