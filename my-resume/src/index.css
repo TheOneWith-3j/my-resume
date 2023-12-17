@@ -12,5 +12,13 @@
     clip-path: polygon(0 10%, 98% 0, 98% 90%, 0% 100%);
     /* clip-path: circle(59.7% at 50% 50%);  */
     }
+
+    .navbar-nav  .active{
+      color: #faf089 !important;
+      font-weight: bolder;
+      background-color: #3031176b; 
+      border-radius: 10px;
+      
+    }
   }
   

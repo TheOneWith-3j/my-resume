@@ -101,7 +101,7 @@
 
 // export default Timeline;
 
-import React, { Children } from "react";
+import React from "react";
 // import * from 'react';
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -109,7 +109,7 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
+// import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 
 const CustomTimeline = ({ title, children, icon }) => {
   return (
@@ -118,11 +118,11 @@ const CustomTimeline = ({ title, children, icon }) => {
         {/* Timeline Header */}
         <TimelineItem className="">
           <TimelineSeparator>
-            <TimelineDot variant className="bg-yellow-800 scale-150">{icon}</TimelineDot>
+            <TimelineDot variant className="bg-yellow-800 scale-150 mx-1">{icon}</TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent >
-            <p className="my-3">wjflfwlkrm{title}</p>
+            <p className="mx-2 my-3">wjflfwlkrm{title}</p>
           </TimelineContent>
         </TimelineItem>
 

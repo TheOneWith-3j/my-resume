@@ -40,84 +40,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex w-full font-Poppins bg-[#083c7c] text-white py-6">
-        <div className="w-full text-center flex flex-col items-center my-3">
-          <h2 className="font-bold text-lg"> Under the guidance of</h2>
-          <table className="w-[40%] font-m my-2">
-            <tr>
-              <td><a href="https://www.linkedin.com/in/sarita-ambadekar-699030146/" target="_blank">
-                Dr. Sarita Ambadekar</a>
-              </td>
-              <td><a href="https://www.linkedin.com/in/abhijit-patil-477a4760/" target="_blank">
-                Prof. Abhijit Patil</a>
-              </td>
-              <td><a href="https://www.linkedin.com/in/aarti-sahitya-01175b128/" target="_blank">
-                Ms. Aarti Sahitya</a>
-              </td>
-            </tr>
-          </table>
-          <br></br>
-          <h2 className="font-bold text-lg">Developed by</h2>
-          {/* <br></br> */}
-          <div className="grid grid-cols-1 md:grid-cols-8 gap-6 my-2">
+      <div className="flex w-full font-Poppins bg-black p-3 rounded-t-xl border-t-4 border-yellow-200">
+        <div className="w-full text-center flex flex-col items-center bg-[#3031176b] rounded-xl">
+          <h2 className="font-bold text-lg text-yellow-300">Developed by</h2>
+          <div className="">
             
-            <div className=" ">
-              <a href="https://linkedin.com/in/jash-joshi01/" target="_blank">
+            <div className="">
+              <a href="https://linkedin.com/in/jash-joshi01/" target="_blank" className="no-underline text-white">
                 Jash J. Joshi
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://linkedin.com/in/trushil-dhokiya/"
-                target="_blank"
-              >
-                Trushil Dhokiya
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://linkedin.com/in/hitanshu-gandhi-92b855244/"
-                target="_blank"
-              >
-                Hitanshu Gandhi
-              </a>
-            </div>
-            
-            <div className=" ">
-              <a
-                href="https://linkedin.com/in/riya-kapadia-a571401bb/"
-                target="_blank"
-              >
-                Riya Kapadia
-              </a>
-            </div>
-            <div>
-              <a href="https://linkedin.com/in/kushal-harsora" target="_blank">
-                Kushal Harsora
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://linkedin.com/in/swaraj-dusane-35941722b"
-                target="_blank"
-              >
-                Swaraj Dusane
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://linkedin.com/in/yash-chauhan-180031203"
-                target="_blank"
-              >
-                Yash Chauhan
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://linkedin.com/in/yashkumar-dubey-716933222"
-                target="_blank"
-              >
-                Yashkumar Dubey
               </a>
             </div>
           </div>
