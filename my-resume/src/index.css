@@ -20,5 +20,26 @@
       border-radius: 10px;
       
     }
+
+    .a{
+      color:inherit !important;
+      text-decoration: none !important;
+    }
+
+    .serviceicon > .MuiSvgIcon-root {
+      width: 200% !important;
+      height: 200% !important;
+      margin: -10px !important;
+      text-align: center !important;
+      align-items: center !important;
+      justify-content: center !important;
+      /* margin-bottom: 8px !important;
+      margin-top: 8px !important; */
+
+    } 
+
+    .flex > .MuiTimelineDot-root{
+      border-color: #faf089 !important;
+    } 
   }
   

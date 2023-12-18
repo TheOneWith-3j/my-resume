@@ -28,7 +28,7 @@ const Header = (props) => {
       <Navbar
         expand="lg"
         sticky="top"
-        className="w-full flex backdrop-blur-3xl top-0 start-0 border-b-4 bg-black dark:border-yellow-200 rounded-xl"
+        className="w-full flex backdrop-blur-3xl top-0 start-0 border-b-4 bg-gradient-to-t from-transparent to-black to-40% dark:border-yellow-200 rounded-xl"
       >
         <Nav.Link as={NavLink} to="/">
           <Navbar.Brand className="">

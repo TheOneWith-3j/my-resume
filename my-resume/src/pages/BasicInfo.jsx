@@ -18,38 +18,8 @@ import Profile from "../components/Profile";
 
 const BasicInfo = () => {
   return (
-    <div
-      className="bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
-      <Navbar/>
-        <Container className="mt-5">
-          <Grid container >
-            <Grid item
-              xs={12}
-              sm={12}
-              md={4}
-              lg={3}
-              className="shadow-3xl rounded-3xl backdrop-blur-sm backdrop-brightness-150"
-            >
-             <Profile/>
-            </Grid>
-
-            <Grid
-              item
-              xs
-              className="shadow-2xl p-4 rounded-3xl backdrop-blur-sm backdrop-brightness-150"
-            >
-              
-              <Header/>
-              <Footer/>
-            </Grid>
-            
-            <Grid container></Grid>
-                    <Navbar/>
-          </Grid>
-        </Container>
-        <Footer/>
+    <div>
+      <p className="text-white">Basic Info page component</p>
     </div>
   );
 };

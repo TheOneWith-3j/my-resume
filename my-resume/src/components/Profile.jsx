@@ -19,7 +19,7 @@ const Profile = () => {
   return (
     <div>
       
-      <div className="mx-4 my-4 p-2 h-auto cursor-pointer hover:scale-y-105 transition-all duration-300 bg-black text-yellow-200 justify-start border-b-4 border-yellow-200 rounded-xl">
+      <div className="mx-4 my-4 p-2 h-auto cursor-pointer hover:scale-y-105 transition-all duration-300 bg-gradient-to-t from-transparent to-black to-40% text-yellow-200 justify-start border-b-4 border-yellow-200 rounded-xl">
                 <p className="font-black text-2xl uppercase">{resumeData.name}</p>
                 <p className="">{resumeData.designation}</p>
               </div>
@@ -34,7 +34,7 @@ const Profile = () => {
               </div>  
               <div className="p-5 -mx-5 cursor-pointer hover:scale-y-105 transition-all duration-300 text-yellow-200">
                 <div className="-my-7">
-                  <CustomTimeline icon={<PersonIcon />} >
+                  <CustomTimeline icon={<PersonIcon />} title="Personal Info">
                     <CustomTimelineItem title='Name' text={resumeData.name}/>
                     <CustomTimelineItem title='Designation' text={resumeData.designation}/>
                     <CustomTimelineItem title='Email' text={resumeData.email}/>
@@ -46,7 +46,7 @@ const Profile = () => {
               </div>
               <div
                     // onClick={handleClick}
-                    className="mt-4 bg-yellow-400 shadow-2xl m-4 p-3 rounded-full  cursor-pointer hover:bg-yellow-300"
+                    className="mt-4 bg-yellow-300 shadow-2xl m-4 p-3 rounded-full  cursor-pointer hover:bg-yellow-200"
                   >
                     <p className="font-Poppins text-xl text-black m-1 text-center font-semibold">
                       Download Resume {<DownloadIcon/>}

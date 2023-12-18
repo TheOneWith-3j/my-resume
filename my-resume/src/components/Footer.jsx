@@ -1,55 +1,46 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import resumeData from "../utils/resumeData";
 
 const Footer = () => {
   return (
     <>
-      <div className="flex w-full font-Poppins py-3 px-2 bg-gray-300">
-        <div className="p-3 w-[30%] ml-10">
-          <h2 className="font-semibold my-4 "> Quick Links</h2>
-          {/* <ul>
-            <li className="text-slate-800 hover:scale-105 transition-all duration-500 ">
-              <Link to={"/"}>Home</Link>
-            </li>
-            <li className="text-slate-800 hover:scale-105 transition-all duration-500 ">
-              <Link to={"/auth/login"}>Login</Link>
-            </li>
-            <li className="text-slate-800 hover:scale-105 transition-all duration-500 ">
-              <Link to={"/results"}>Results</Link>
-            </li>
-            <li className="text-slate-800 hover:scale-105 transition-all duration-500 ">
-              <Link to={"/guidelines"}>Guidelines</Link>
-            </li>
-          </ul> */}
-        </div>
+      <div className="flex w-full font-Poppins bg-gradient-to-b from-transparent to-black to-40% p-2 rounded-t-xl border-t-4 border-yellow-200 flex-wrap">
+        <div className="w-full flex flex-col  rounded-xl justify-between flex-wrap">
+          <div className="mt-2 ml-3 mr-3 text-yellow-300 ">
+            <span className="text-md font-Poppins font-semibold float-left">
+              Developed by{" "}
+              <h2 className="font-semibold my-t-4 ">
+              <a
+                href={resumeData.social.Linkedin.link}
+                target="_blank"
+                className="no-underline text-white"
+              >
+                {resumeData.name}
+              </a>
+            </h2>
+            </span>
 
-        <div className="w-[70%] p-3">
-          <div className="w-full text-center flex flex-col items-center ">
-            <img src="https://www.somaiya.edu.in/assets/default_asset/img/somiaya-vidyavihar-logo.svg" />
-            <h2 className="mt-5 text-sm">Designed and Developed by</h2>
-            <h2 className="font-Poppins text-xs mt-2">
-              Department Of Computer Engineering
-            </h2>
-            <h2 className="font-semibold text-sm">
-              K.J Somaiya Institute of Technology
-            </h2>
-            <p className="mt-4 text-sm">
+            <div className="text-right">
+            <h4 className="font-semibold my-t-4 ">Quick Links</h4>
+              <ul>
+                <li className="text-slate-800 hover:scale-105 transition-all duration-500 ">
+                  <Link to={"/"} className="text-white no-underline">Resume</Link>
+                </li>
+                <li className="text-slate-800 hover:scale-105 transition-all duration-500 ">
+                  <Link to={"/portfolio"} className="text-white no-underline">Portfolio</Link>
+                </li>
+                <li className="text-slate-800 hover:scale-105 transition-all duration-500 ">
+                  <Link to={"/socials"}className="text-white no-underline">Socials</Link>
+                </li>
+                <li className="text-white hover:scale-105 transition-all duration-500 ">
+                  <Link to={"/contact"} className="text-white no-underline">Contact</Link>
+                </li>
+              </ul>
+            </div>
+            <p className="text-sm items-center text-center pt-2 mb-0">
               All Rights Reserved | {new Date().getFullYear()}
             </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex w-full font-Poppins bg-black p-3 rounded-t-xl border-t-4 border-yellow-200">
-        <div className="w-full text-center flex flex-col items-center bg-[#3031176b] rounded-xl">
-          <h2 className="font-bold text-lg text-yellow-300">Developed by</h2>
-          <div className="">
-            
-            <div className="">
-              <a href="https://linkedin.com/in/jash-joshi01/" target="_blank" className="no-underline text-white">
-                Jash J. Joshi
-              </a>
-            </div>
           </div>
         </div>
       </div>

@@ -118,11 +118,11 @@ const CustomTimeline = ({ title, children, icon }) => {
         {/* Timeline Header */}
         <TimelineItem className="">
           <TimelineSeparator>
-            <TimelineDot variant className="bg-yellow-800 scale-150 mx-1">{icon}</TimelineDot>
+            <TimelineDot variant className="bg-black scale-150 mx-1 border-yellow-300 text-yellow-200">{icon}</TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent >
-            <p className="mx-2 my-3">wjflfwlkrm{title}</p>
+            <p className="mx-2 my-2 font-bold text-xl underline underline-offset-2 text-yellow-200">{title}</p>
           </TimelineContent>
         </TimelineItem>
 
