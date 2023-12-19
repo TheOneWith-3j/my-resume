@@ -114,6 +114,56 @@ export default{
             title: "Source Control",
             description: ["GitHub", "git"]
         }
+    ],
+
+    projects:[
+        {
+            tag: "React",
+            images : ["image 1", "imag-2"],
+            title: "proj1",
+            caption: "",
+            description: "ajdhhcchla",
+            links : [
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}, 
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}, 
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}]
+        },
+
+        {
+            tag: "Personal",
+            images : ["image 1", "imag-2"],
+            title: "proj2",
+            caption: "",
+            description: "amnccnsdmncd,asmcn,ds",
+            links : [
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}, 
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}, 
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}]
+        },
+
+        {
+            tag: "ML",
+            images : ["image 1", "imag-2"],
+            title: "",
+            caption: "",
+            description: "",
+            links : [
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}, 
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}, 
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}]
+        },
+
+        {
+            tag: "Python",
+            images : ["image 1", "imag-2"],
+            title: "",
+            caption: "",
+            description: "",
+            links : [
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}, 
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}, 
+                {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}]
+        }
     ]
     
 }

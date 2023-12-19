@@ -38,8 +38,14 @@
 
     } 
 
-    .flex > .MuiTimelineDot-root{
+    /* .flex > .MuiTimelineDot-root{
       border-color: #faf089 !important;
     } 
+
+    .MuiButtonBase-root .MuiTab-root{
+      color: #faf089 !important;
+      background-color: blue !important ;
+
+    } */
   }
   
