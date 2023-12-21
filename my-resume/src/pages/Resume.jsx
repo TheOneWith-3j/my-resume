@@ -19,7 +19,7 @@ const Resume = () => {
           item
           className=" text-yellow-300 cursor-auto animate-bounce inline-block relative "
         >
-          <h3 className="relative border-b-8 border-yellow-200 mb-7 whitespace-pre-line">
+          <h3 className="relative border-b-8 mt-7 border-yellow-200 mb-7 whitespace-pre-line">
             About Me
           </h3>
         </Grid>

@@ -59,13 +59,13 @@ const Header = (props) => {
             </Nav.Link>
 
             {/* Socials Link */}
-            <Nav.Link
+            {/* <Nav.Link
               as={NavLink}
               to="/socials"
               className={pathName === "/socials" ? "text-yellow-300" : "text-white"}
             >
               <p className="text-xl my-1 hover:text-yellow-200">Socials</p>
-            </Nav.Link>
+            </Nav.Link> */}
 
             {/* Contact Link */}
             <Nav.Link
@@ -91,8 +91,8 @@ const Header = (props) => {
               // onClick={handleClick}
               className="bg-yellow-300 shadow-2xl ml-2 mt-2 mr-3 mb-2 p-2 rounded-full  cursor-pointer hover:bg-yellow-200"
             >
-              <p className="font-Poppins text-xl text-black m-1 text-center font-semibold">
-                Hire Me! {<Telegram/>}
+              <p className="font-Poppins  m-1 text-center ">
+                <a href={"mailto:".concat(resumeData.email)} className="no-underline text-black text-xl font-semibold">Hire Me! {<Telegram/>}</a>
               </p>
             </div>
         </Navbar.Collapse>

@@ -30,9 +30,7 @@ const Footer = () => {
                 <li className="text-slate-800 hover:scale-105 transition-all duration-500 ">
                   <Link to={"/portfolio"} className="text-white no-underline">Portfolio</Link>
                 </li>
-                <li className="text-slate-800 hover:scale-105 transition-all duration-500 ">
-                  <Link to={"/socials"}className="text-white no-underline">Socials</Link>
-                </li>
+                
                 <li className="text-white hover:scale-105 transition-all duration-500 ">
                   <Link to={"/contact"} className="text-white no-underline">Contact</Link>
                 </li>

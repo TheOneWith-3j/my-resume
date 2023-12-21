@@ -7,6 +7,7 @@ import GitHubIcon from "@material-ui/icons/GitHub"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import { StorageRounded, Web, WebRounded } from '@material-ui/icons'
 import { DataObjectRounded } from '@mui/icons-material'
+import bgimg from '../assets/bgimg.jpg'
 
 export default{
     name:"Jash J. Joshi",
@@ -119,7 +120,7 @@ export default{
     projects:[
         {
             tag: "React",
-            images : ["image 1", "imag-2"],
+            images : [bgimg, "imag-2"],
             title: "proj1",
             caption: "",
             description: "ajdhhcchla",
@@ -164,6 +165,21 @@ export default{
                 {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}, 
                 {link:"ajbcjcbadsjcbnasjc", icon: <DataObjectRounded/>}]
         }
+    ],
+
+
+
+
+    proj:[
+        {
+            Tags :['React', 'Web DEv', 'python', "ML", 'Data Analysis'],
+            imgs : [
+                {
+                    Tag1: [bgimg, "imag-2"],
+                    Tag2: [bgimg, "imag-2"],
+                    Tag3: [bgimg, "imag-2"]} ]
+        }
+        
     ]
     
 }

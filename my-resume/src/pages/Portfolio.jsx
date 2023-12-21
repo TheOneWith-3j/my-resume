@@ -6,6 +6,9 @@ import { useState } from "react";
 import CustomTabs from "../components/CustomTabs";
 import resumeData from "../utils/resumeData";
 import { useLocation } from "react-router";
+import CustomCards from "../components/CustomCards";
+import portfolioData from "../data/portfolioData";
+import GalleryModal from "../components/ImgGallery";
 
 const Portfolio = () => {
   // const { tabValue, setTabValue } = useState("All");
@@ -37,22 +40,28 @@ const Portfolio = () => {
     // </Grid>
 
     <Grid container>
-      <Grid item xs={12}>
+      {/* <Grid item xs={12}>
         <CustomTabs />
-      </Grid>
+      </Grid> */}
+
+      <Grid
+            item
+            className=" text-yellow-300 cursor-auto animate-bounce inline-block relative "
+          >
+            <h3 className="relative border-b-8 border-yellow-200 mb-7 mt-7 whitespace-pre-line">
+              My Projects
+            </h3>
+          </Grid>
 
       <Grid item xs={12}>
-        <Grid container spacing={3} className="mt-2">
-          {resumeData.projects.map(proj =>(
-            
-            <>
-              {console.log(pathName)}
-              {pathName== proj.tag || pathName=='All' ? (
+        <Grid container spacing={3} className="mt-2 justify-around mb-4">
+          {/* {resumeData.projects.map(proj =>(
+                      
               <Grid item>
               <Grow in timeout={1000}>
-              <Card>
+              <Card onClick={() => console.log("Card clicked")}>
                 <CardActionArea>
-                  <CardMedia/>
+                  <CardMedia className="" image={proj.images['bgimg']} title={proj.title}/>
                   <CardContent>
                     <Typography>{proj.title}</Typography>
                     <Typography>{proj.description}</Typography>
@@ -61,20 +70,34 @@ const Portfolio = () => {
                   </CardContent>
                 </CardActionArea>
               </Card>
+              <CustomCards tag='skjdcsdkjcdsnkjcna' images={proj.}/>
               </Grow>
-            </Grid>) 
+            </Grid>        
             
-            :
-            
-            null}
-              
-            </>
-            
-
           ))}
+
+        </Grid> */}
+        <Grid item xs={12} sm={6} md={6}>
+        {/* <CustomCards tag={portfolioData.project1.tag} title={portfolioData.project1.title} description={portfolioData.project1.description} images={portfolioData.project1.images}/> */}
+          <GalleryModal projectTitle={portfolioData.project1.title} projectVideos={portfolioData.project1.videos} projectImages={portfolioData.project1.images} projectDescription={portfolioData.project1.description} demoLink={portfolioData.project1.links[0]} />
+
+        </Grid>
+        <Grid item>
+        {/* <CustomCards tag={portfolioData.project2.tag} title={portfolioData.project2.title} description={portfolioData.project2.description} images={portfolioData.project2.images}/> */}
+        <GalleryModal projectTitle={portfolioData.project2.title} projectVideos={portfolioData.project2.videos} projectImages={portfolioData.project2.images} projectDescription={portfolioData.project2.description} demoLink={portfolioData.project2.links[0]} />
+        </Grid>
+        <Grid item>
+        {/* <CustomCards tag={portfolioData.project3.tag} title={portfolioData.project3.title} description={portfolioData.project3.description} images={portfolioData.project3.images}/> */}
+        <GalleryModal projectTitle={portfolioData.project3.title} projectVideos={portfolioData.project3.videos} projectImages={portfolioData.project3.images} projectDescription={portfolioData.project3.description} demoLink={portfolioData.project3.links[0]} />
+
+        </Grid>
+        <Grid item>
+          {/* <CustomCards tag={portfolioData.project4.tag} title={portfolioData.project4.title} description={portfolioData.project4.description} images={portfolioData.project4.images}/> */}
+          <GalleryModal projectTitle={portfolioData.project4.title} projectVideos={portfolioData.project4.videos} projectImages={portfolioData.project4.images} projectDescription={portfolioData.project4.description} demoLink={portfolioData.project4.links[0]} />
 
         </Grid>
       </Grid>
+    </Grid>
     </Grid>
   );
 };

@@ -52,7 +52,7 @@ function App() {
             <BrowserRouter>
               <Header />
 
-              <div className="bg-black bg-opacity-25 rounded-3xl mt-4 p-4 text-white min-h-screen">
+              <div className="bg-black bg-opacity-25 rounded-3xl mt-4 mb-4 p-4 text-white min-h-screen">
                 <Routes>
                   <Route index element={<Resume />} />
                   <Route path="/timeline" element={<Timeline />} />
